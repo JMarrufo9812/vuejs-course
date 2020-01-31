@@ -1,0 +1,100 @@
+
+
+{
+    "actor": {
+        "type": "user",
+        "name": "Joe",
+        "url": "/users/:id"
+    },
+    "type": "add",
+    "object": {
+        "type": "company",
+        "name": "google",
+        "url": "/contacts/:id"
+    }
+}
+
+
+{
+    "actor": {
+        "type": "user",
+        "name": "Joe",
+        "url": "/users/:id"
+    },
+    "type": "asigned",
+    "object": {
+        "type": "activity",
+        "name": "llamada de prueba",
+        "url": "/activities/:id"
+    },
+    "target": {
+        "type": "contact",
+        "name": "franko",
+        "url": "/activities/:id"
+    }
+}
+
+
+{
+    "actor": {
+        "type": "user",
+        "name": "Joe",
+        "url": "/users/:id"
+    },
+    "type": "complete",
+    "object": {
+        "type": "activity",
+        "name": "reunion",
+        "url": "/activity/:id"
+    },
+    "target": {
+        "type": "deal",
+        "name": "deal de prueba",
+    },
+    "participants": {
+        "type": "contact",
+        "name": "raul mendoza",
+        "url": "/contacts/:id"
+    }
+}
+
+
+{
+    "actor": {
+        "type": "user",
+        "name": "Joe",
+        "url": "/users/:id"
+    },
+    "type": "update",
+    "object": {
+        "type": "deal",
+        "name": "deal de prueba",
+        "url": "/deals/:id"
+    },
+    "item": "estado",
+    "itemBefore": "abierto",
+    "ItemAfter": "ganado"
+}
+
+
+{
+    "actor": {
+        "type": "user",
+        "name": "Joe",
+        "url": "/users/:id"
+    },
+    "type": "update",
+    "object": {
+        "type": "contact",
+        "name": "franko",
+        "url": "/contacts/:id"
+    },
+    "target": {
+        "type": "deal",
+        "name": "deal de prueba",
+        "url": "deals/:id"
+    },
+    "item": "name",
+    "itemBefore": "franko",
+    "ItemAfter": "francisco"
+}
