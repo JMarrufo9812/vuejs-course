@@ -10,7 +10,7 @@
     "apollo:schema:generate": "vue-cli-service apollo:schema:generate",
     "apollo:schema:publish": "vue-cli-service apollo:schema:publish",
     "apollo:start": "vue-cli-service apollo:start",
-    "db": "json-graphql-server src/db.js --p 4000"
+    "db": "json-graphql-server src/db.js --p 4000" 
   },
   "dependencies": {
     "core-js": "^3.4.4",
@@ -51,6 +51,7 @@
       "eslint:recommended"
     ],
     "rules": {
+      "no-console": "off",
       "graphql/template-strings": [
         "error",
         {

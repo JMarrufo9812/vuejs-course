@@ -10,6 +10,9 @@
       <v-tab to="/contacts">Contactos</v-tab>
       <v-spacer></v-spacer>
 
+      <v-tab to="/directives">directivas</v-tab>
+      <v-spacer></v-spacer>
+
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>

@@ -6,7 +6,7 @@
           <v-icon dark>mdi-plus</v-icon>
         </v-btn>
       </template>
-      <ModalAddContactForm :dialog="dialog" />
+      <ModalAddContactForm @close="onClickChild"/>
     </v-dialog>
   </v-row>
 </template>
@@ -21,7 +21,15 @@ export default {
   }),
   components: {
     ModalAddContactForm
+  },
+  methods: {
+      onClickChild (value) {
+        this.dialog = value;
+    }
+    
   }
+ 
+ 
 };
 </script>
 
